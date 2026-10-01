@@ -1,4 +1,3 @@
-<img width="579" height="442" alt="image" src="https://github.com/user-attachments/assets/d2daa1e5-3bee-49ed-9892-9e33c3f45395" /># MySQL Chapter 4
 
 ## console output testing as images
 ### Query 1
