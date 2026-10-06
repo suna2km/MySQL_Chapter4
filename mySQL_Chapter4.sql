@@ -104,3 +104,16 @@ FROM staff
     JOIN city USING (city_id)
     JOIN country USING (country_id)
 ORDER BY last_name, first_name;
+/********************************************************************
+Query 9: Natural keyword
+• write a query that produces the following output displaying the film title plus the store and inventory id
+• using a NATURAL JOIN
+• sort by title, store id, and inventory id
+• only displaying the first 100 rows
+• tables: film_text, inventory
+*****************************************************************************************/
+SELECT film_id, title, store_id, inventory_id
+FROM film_text
+	NATURAL JOIN inventory
+ORDER BY title, store_id, inventory_id
+LIMIT 100
