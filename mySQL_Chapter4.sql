@@ -39,3 +39,18 @@ FROM customer c1 JOIN customer c2
 	ON c1.first_name = c2.first_name AND
        c1.last_name <> c2.last_name
 ORDER BY first_name, last_name;
+/********************************************************************
+Query 4: More than two tables
+• Write a query that produces the following output displaying the staff’s address
+• tables: staff, address, city, country
+• sort by last name and first name
+*****************************************************************************************/
+SELECT staff_id, CONCAT(last_name,  ', ', first_name) AS staff_name, email, store_id, district, city, country
+FROM staff s 
+	JOIN address a 
+		ON s.address_id = a.address_id
+	JOIN city c
+		ON c.city_id = a.city_id
+	JOIN country co
+		ON co.country_id = c.country_id
+ORDER BY last_name, first_name;
