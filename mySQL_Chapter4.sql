@@ -54,3 +54,14 @@ FROM staff s
 	JOIN country co
 		ON co.country_id = c.country_id
 ORDER BY last_name, first_name;
+/********************************************************************
+Query 5: Implicit Inner Join
+• Convert query 4 from an explicit join to an implicit join.
+• Result set will be the same.
+*****************************************************************************************/
+SELECT staff_id, CONCAT(last_name,  ', ', first_name) AS staff_name, email, store_id, district, city, country
+FROM staff s, address a, city c, country co 
+WHERE s.address_id = a.address_id
+	AND c.city_id = a.city_id
+    AND co.country_id = c.country_id
+ORDER BY last_name, first_name;
