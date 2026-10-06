@@ -8,3 +8,5 @@
 ![Query 3](Assets/chap4_query3.png)
 ### Query 4
 ![Query 4](Assets/chap4_query4.png)
+### Query 5
+![Query 5](Assets/chap4_query5.png)
