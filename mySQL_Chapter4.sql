@@ -80,3 +80,16 @@ FROM film f
 		ON i.inventory_id = r.inventory_id
 WHERE r.rental_id IS NULL
 ORDER BY title;
+/********************************************************************
+Query 7: Right Outer Join
+• write a query that produces the following output displaying languages with no films
+• using a RIGHT OUTER JOIN
+• sort by language name
+• tables: film, language
+*****************************************************************************************/
+SELECT f.film_id, f.title, l.language_id, l.name
+FROM film f
+	RIGHT JOIN language l
+    ON f.language_id = l.language_id
+WHERE f.film_id IS NULL
+ORDER BY name
