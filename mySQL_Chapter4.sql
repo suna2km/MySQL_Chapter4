@@ -93,3 +93,14 @@ FROM film f
     ON f.language_id = l.language_id
 WHERE f.film_id IS NULL
 ORDER BY name
+/********************************************************************
+Query 8: Using keyword
+• rewrite query 4 using the USING keyword instead of ON
+• result set will be the same
+****************************************************************************************/
+SELECT staff_id, CONCAT(last_name,  ', ', first_name) AS staff_name, email, store_id, district, city, country
+FROM staff 
+	JOIN address USING (address_id)
+    JOIN city USING (city_id)
+    JOIN country USING (country_id)
+ORDER BY last_name, first_name;
