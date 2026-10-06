@@ -10,3 +10,5 @@
 ![Query 4](Assets/chap4_query4.png)
 ### Query 5
 ![Query 5](Assets/chap4_query5.png)
+### Query 6
+![Query 6](Assets/chap4_query6.png)
