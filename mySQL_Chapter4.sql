@@ -142,3 +142,20 @@ UNION
     FROM rental
     WHERE customer_id = 9 AND return_date IS NULL
 ORDER BY rental_date;
+/********************************************************************
+Query 12: Full Outer Join
+• rewrite query 7 as a full outer join
+• do NOT use a where clause
+• sort by language id desc, and film title asc
+*****************************************************************************************/
+SELECT f.film_id, f.title, l.language_id, l.name
+FROM film f
+	LEFT JOIN language l
+    ON f.language_id = l.language_id
+UNION
+SELECT f.film_id, f.title, l.language_id, l.name
+FROM film f
+	RIGHT JOIN language l
+    ON f.language_id = l.language_id
+
+ORDER BY language_id DESC, title;
