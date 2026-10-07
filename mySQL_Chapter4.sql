@@ -117,3 +117,13 @@ FROM film_text
 	NATURAL JOIN inventory
 ORDER BY title, store_id, inventory_id
 LIMIT 100
+/********************************************************************
+Query 10: Cross Join
+• write a query that produces the following output displaying every staff assigned to every store
+• Using a CROSS JOIN
+• sort by staff id, store id
+• tables: staff, store
+*****************************************************************************************/
+SELECT sa.staff_id, sa.first_name, sa.last_name, so.store_id
+FROM staff sa CROSS JOIN store so
+ORDER BY staff_id, store_id
