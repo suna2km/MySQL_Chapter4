@@ -126,4 +126,19 @@ Query 10: Cross Join
 *****************************************************************************************/
 SELECT sa.staff_id, sa.first_name, sa.last_name, so.store_id
 FROM staff sa CROSS JOIN store so
-ORDER BY staff_id, store_id
+ORDER BY staff_id, store_id;
+
+/********************************************************************
+Query 11: Union
+• write a query that produces the following output displaying customer’s 9 rentals with an IN/OUT status
+• using a UNION
+• sort by rental_date
+*****************************************************************************************/
+SELECT customer_id, rental_id, rental_date, inventory_id, 'IN' AS status
+	FROM rental
+	WHERE customer_id = 9 AND return_date IS NOT NULL
+UNION 
+	SELECT customer_id, rental_id, rental_date, inventory_id, 'OUT' AS status
+    FROM rental
+    WHERE customer_id = 9 AND return_date IS NULL
+ORDER BY rental_date;
