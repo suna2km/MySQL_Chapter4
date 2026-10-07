@@ -14,4 +14,14 @@
 ![Query 6](Assets/chap4_query6.png)
 ### Query 7
 ![Query 7](Assets/chap4_query7.png)
+### Query 8
+![Query 8](Assets/chap4_query8.png)
+### Query 9
+![Query 9](Assets/chap4_query9.png)
+### Query 10
+![Query 10](Assets/chap4_query10.png)
+### Query 11
+![Query 11](Assets/chap4_query11.png)
+### Query 12
+![Query 12](Assets/chap4_query12.png)
 
