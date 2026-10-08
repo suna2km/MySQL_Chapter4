@@ -24,7 +24,7 @@ is displayed by using concepts listed in the following section.
 - Union
 - Full Outer Join
 
-## console output testing as images
+## Console output testing as images
 ### Query 1
 ![Query 1](Assets/chap4_query1.png)
 ### Query 2
