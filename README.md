@@ -7,7 +7,7 @@
 
 ## Summary
 This assignment is a collection of twelve multi-table queries that deal with data such as customer, 
-film, rental information etc. In each query we manipulated how the data in the tables 
+film, rental information etc. In each query I manipulated how the data in the tables 
 is displayed by using concepts listed in the following section.
 
 ## List of New Concepts Used 
